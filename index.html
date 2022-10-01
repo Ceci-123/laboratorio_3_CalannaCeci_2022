@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heroes y Villanos - Ceci</title>
+
+    <link rel="StyleSheet" href="estilo.css" type="text/css" media="screen" />
+  </head>
+  <body id="body">
+    <div id="divPrincipal">
+      <h2>Parcial Calanna Cecilia</h2>
+      <header>
+        <div class="filtro">
+          <label>Filtrar por: </label>
+          <select id="seleccion">
+            <option value="todos" selected>Todos</option>
+            <option value="heroes">Heroe</option>
+            <option value="villanos">Villano</option>
+          </select>
+        </div>
+        <div class="promedio">
+          <label>Calcular promedio de edad: </label>
+          <input type="text" id="promedio" />
+          <input
+            type="button"
+            class="botones"
+            id="calcularPromedio"
+            value="Calcular"
+          />
+        </div>
+      </header>
+
+      <div class="checkboxes">
+        <input type="checkbox" id="cId" /><label>ID</label>
+        <input type="checkbox" id="cNombre" /><label>Nombre</label>
+        <input type="checkbox" id="cApellido" /><label>Apellido</label>
+        <input type="checkbox" id="cEdad" /><label>Edad</label>
+        <input type="checkbox" id="cAlterEgo" /><label>Alter Ego</label>
+        <input type="checkbox" id="cCiudad" /><label>Ciudad</label>
+        <input type="checkbox" id="cPublicado" /><label>Publicado</label>
+        <input type="checkbox" id="cEnemigo" /><label>Enemigo</label>
+        <input type="checkbox" id="cRobos" /><label>Robos</label>
+        <input type="checkbox" id="cAsesinatos" /><label>Robos</label>
+      </div>
+
+      <section id="contenedorTabla">
+        <table id="tabla">
+          <thead>
+            <tr>
+              <th id="thId">
+                <input class="button" type="button" id="oId" value="Id" />
+              </th>
+              <th id="thApellido">
+                <input
+                  class="button"
+                  type="button"
+                  id="oApellido"
+                  value="Apellido"
+                />
+              </th>
+              <th id="thNombre">
+                <input
+                  class="button"
+                  type="button"
+                  id="oNombre"
+                  value="Nombre"
+                />
+              </th>
+              <th id="thEdad">
+                <input class="button" type="button" id="oEdad" value="Edad" />
+              </th>
+              <th id="thAlterEgo">
+                <input
+                  class="button"
+                  type="button"
+                  id="oAlterEgo"
+                  value="AlterEgo"
+                />
+              </th>
+              <th id="thCiudad">
+                <input
+                  class="button"
+                  type="button"
+                  id="oCiudad"
+                  value="Ciudad"
+                />
+              </th>
+              <th id="thPublicado">
+                <input
+                  class="button"
+                  type="button"
+                  id="oPublicado"
+                  value="Publicado"
+                />
+              </th>
+              <th id="thEnemigos">
+                <input
+                  class="button"
+                  type="button"
+                  id="oEnemigo"
+                  value="Enemigos"
+                />
+              </th>
+              <th id="thRobos">
+                <input class="button" type="button" id="oRobos" value="Robos" />
+              </th>
+              <th id="thAsesinatos">
+                <input
+                  class="button"
+                  type="button"
+                  id="oAsesinatos"
+                  value="Asesinatos"
+                />
+              </th>
+            </tr>
+          </thead>
+          <tbody id="cuerpoTabla"></tbody>
+        </table>
+      </section>
+      <input id="agregar" type="button" class="botones" value="Agregar" />
+
+      <section id="contenedorForm">
+        <form id="form">
+          <h2>Formulario de ingreso de heroes o villanos</h2>
+          <label>ID: <input type="number" id="fId" /></label>
+          <label>Nombre: <input type="text" id="fNombre" /></label>
+          <label>Apellido: <input type="text" id="fApellido" /></label>
+          <label>Edad: <input type="text" id="fEdad" /></label>
+          <label
+            >Tipo:
+            <select id="fSelect">
+              <option value="perro" selected>Heroe</option>
+              <option value="gato">Villano</option>
+            </select>
+          </label>
+          <label id="label1">Alter Ego: </label
+          ><input type="text" id="fInput1" /> <label id="label2">Ciudad: </label
+          ><input type="text" id="fInput2" />
+          <label id="label3">Publicado: </label
+          ><input type="text" id="fInput3" />
+          <label id="label4">Enemigo: </label
+          ><input type="text" id="fInput4" /> <label id="label5">Robos: </label
+          ><input type="text" id="fInput5" />
+          <label id="label6">Asesinatos: </label
+          ><input type="text" id="fInput6" />
+          <div class="botonera">
+            <input type="button" class="botones" id="alta" value="Alta" />
+            <input
+              type="button"
+              class="botones"
+              id="modificar"
+              value="Modificar"
+            />
+            <input
+              type="button"
+              class="botones"
+              id="eliminar"
+              value="Eliminar"
+            />
+            <input
+              type="button"
+              class="botones"
+              id="cancelar"
+              value="Cancelar"
+            />
+          </div>
+        </form>
+      </section>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

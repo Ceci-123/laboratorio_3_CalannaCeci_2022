@@ -1,0 +1,178 @@
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      header div {
+         display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+  div#divPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    color: black;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+input#promedio {
+    width: 20%;
+    text-align: center;
+    padding: 5px 5px;
+    border: 1px black;
+    border-radius: 4px;
+    background-color:rgb(243, 122, 243) ;  
+    color:black;
+  }
+
+  
+  input.botones {
+    width: 25%;
+    background-color:rgb(243, 122, 243) ; 
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 5px;
+  }
+
+  select {
+    background-color:rgb(243, 122, 243) ; 
+    color: black;
+    padding: 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  select:hover {
+    background-color:rgb(243, 122, 243) ; 
+  }
+
+  div#contenedor {
+    margin: 10px 30px;
+  }
+
+  div.checkboxes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    padding: 6px;
+  }
+
+  div.checkboxes input {
+    margin-left: 12px;
+    margin-right: 2px;
+  }
+
+  section#contenedorTabla {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  table {
+    width: 60%;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 10px;
+  }
+
+  td {
+    padding: 8px;
+    background: #ee53a1;
+    color:black;
+    border: 4px solid #fff;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  tr:hover td {
+    background: #df0b75;
+    font-size: 12px;
+    background-color: rgb(243, 122, 243);
+  }
+
+  input.button {
+    width: 96%;
+    background-color:rgb(243, 122, 243) ; 
+    color:black;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 8px 8px;
+  }
+
+  input.button:hover {
+   background-color: rgb(243, 122, 243);
+  }
+
+  section#contenedorForm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: rgb(248, 176, 248);
+  }
+
+  form label {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  form input[type="text"],
+  form input[type="number"] {
+    width: 100px;
+    padding: 3px 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color:rgb(243, 122, 243) ; 
+    margin: 8px 0;
+    display: inline-block;
+  }
+
+  /* esto acomoda abajo los botones */
+  form input[type="button"] {
+    width: 20%;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color:rgb(243, 122, 243) ; 
+    color:black;
+  }
+
+  form input.botones[type="button"] {
+    display: inline-block;
+  }
+
+  div.botonera {
+    width: 100%;
+  }
+
+  tr{
+		height: 12px;
+ 	}
